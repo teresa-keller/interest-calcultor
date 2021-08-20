@@ -1,6 +1,7 @@
-package com.example.InterestCalculator;
+package com.example.InterestCalculator.Classes;
 
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 
 @Entity
@@ -10,6 +11,7 @@ public class CreditCard {
 //    Discover gets 1% interest
 
     @Id
+    @GeneratedValue
     private int cardId;
     private double interest;
     private String cardType;
@@ -17,6 +19,7 @@ public class CreditCard {
     public CreditCard(String cardType) {
         this.cardType = cardType;
     }
+    public CreditCard(){};
 
     public double getInterest() {
         return interest;

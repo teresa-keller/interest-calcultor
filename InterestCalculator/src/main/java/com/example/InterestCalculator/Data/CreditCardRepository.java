@@ -1,6 +1,6 @@
 package com.example.InterestCalculator.Data;
 
-import com.example.InterestCalculator.CreditCard;
+import com.example.InterestCalculator.Classes.CreditCard;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 

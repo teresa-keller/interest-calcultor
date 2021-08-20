@@ -1,6 +1,9 @@
-package com.example.InterestCalculator;
+package com.example.InterestCalculator.Classes;
 
-import javax.persistence.*;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.OneToMany;
 import java.util.List;
 
 @Entity
@@ -8,6 +11,7 @@ import java.util.List;
 public class Wallet {
 
     @Id
+    @GeneratedValue
     private int walletID;
 
     @OneToMany

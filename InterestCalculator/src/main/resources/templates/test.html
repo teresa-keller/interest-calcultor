@@ -1,10 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="https://www.thymeleaf.org/">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
 <body>
-
+<p>I'm working</p>
+<form method="get">
+    <label>Card Type
+        <input type="text" name="cardType">
+        <button type="submit" value="Add Card to Wallet"></button>
+    </label>
+</form>
+<p th:text="${creditCard.cardType}"></p>
 </body>
 </html>
