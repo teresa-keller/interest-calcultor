@@ -1,7 +1,9 @@
 package com.example.InterestCalculator;
 
+import javax.persistence.Entity;
 import javax.persistence.Id;
 
+@Entity
 public class CreditCard {
 //    Visa gets 10%
 //    MC gets 5% interest
