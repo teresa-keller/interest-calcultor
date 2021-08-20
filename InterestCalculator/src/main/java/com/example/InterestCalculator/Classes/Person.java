@@ -11,4 +11,22 @@ public class Person {
     @GeneratedValue
     private int personId;
     private String personName;
+
+    public Person(String personName) {
+        this.personName = personName;
+    }
+
+    public Person() {};
+
+    public int getPersonId() {
+        return personId;
+    }
+
+    public String getPersonName() {
+        return personName;
+    }
+
+    public void setPersonName(String personName) {
+        this.personName = personName;
+    }
 }
